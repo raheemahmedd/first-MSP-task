@@ -1,0 +1,59 @@
+body{
+    padding: 0;
+    margin:0;
+}
+nav{
+ 
+
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: linear-gradient(to right, #090d35 40%, #997a37);
+    height: 100px;
+    align-items: center;
+   
+}
+.logo{
+   
+    height: 70px;
+    position: absolute;
+    width: 100px;
+    left: 5px;
+    top: 8px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+button{
+    display: none;
+    position: absolute;
+}
+a:hover{
+   opacity: 0.8;
+ 
+   
+}
+@media only screen and (max-width: 660px){
+
+    button{
+        display: block;
+
+    }
+    nav{
+        flex-direction: column;
+        justify-content: start;
+        position: absolute;
+        top: 25px;
+        align-items: flex-start;
+        
+    }
+    .logo{
+        display: none;
+
+    }
+}
